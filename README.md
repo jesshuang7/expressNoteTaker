@@ -20,7 +20,7 @@ Explore the [Project Page](https://github.com/jesshuang7/expressNoteTaker)
 The focus of this project was to create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
 
 
-![Project Gif](Assets/expressnotetaker.gif)
+![Project Gif](Develop/public/assets/expressnotetaker.gif)
 
 ### User Story
 
