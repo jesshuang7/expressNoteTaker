@@ -8,7 +8,7 @@ const notesdb = require("./db/db.json");
 
 // Sets up the Express App
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 
 // Sets up the Express app to handle data parsing
@@ -25,14 +25,15 @@ app.get("/notes", function (req, res) {
 
 // Displays read the `db.json` file and return all saved notes as JSON.
 app.get("/api/notes", function (req, res) {
-  // fs.readFile('./db/db.json', (err, data) => {
+  return res.json(notesdb);
+});
+
+ // fs.readFile('./db/db.json', (err, data) => {
   //   if (err) throw err;
   //   const getNoteDb = JSON.parse(data);
   //   console.log(getNoteDb);
   //   res.json(getNoteDb);
   // });
-  return res.json(notesdb);
-});
 
 
 // Create New Notes - takes in JSON input, create an unique ID
